@@ -1,0 +1,27 @@
+{
+  "name": "booking-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saurabhk98/Booking-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saurabhk98/Booking-App/issues"
+  },
+  "homepage": "https://github.com/saurabhk98/Booking-App#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.3",
+    "nodemon": "^2.0.20"
+  }
+}
