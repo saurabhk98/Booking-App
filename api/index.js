@@ -5,6 +5,8 @@ import authRoute from "./routes/auth.js"
 import usersRoute from "./routes/users.js"
 import hotelsRoute from "./routes/hotels.js"
 import roomsRoute from "./routes/rooms.js"
+import cookieParser from "cookie-parser"
+import cors from "cors"
 const app = express()
 dotenv.config()
 
@@ -22,9 +24,10 @@ mongoose.connection.on("disconnected", ()=>{
 })
 
 //middlewares
+app.use(cors()) //Cross origin, but we are using proxy in this project
+app.use(cookieParser()) //to read cookies
+app.use(express.json()) //to parse JSON data
 
-
-app.use(express.json())
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", usersRoute);
