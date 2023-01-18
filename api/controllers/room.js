@@ -33,6 +33,7 @@ export const updateRoom = async (req, res, next) => {
     next(err);
   }
 };
+
 export const updateRoomAvailability = async (req, res, next) => {
   try {
     await Room.updateOne(
