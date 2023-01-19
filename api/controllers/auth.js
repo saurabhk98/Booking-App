@@ -45,7 +45,7 @@ export const login = async (req,res,next)=>{
                 httpOnly:true
             })
             .status(200)
-            .json({...otherDetails}); //dont return password to client-side/ JSON reponse
+            .json({details:{...otherDetails}, isAdmin}); //dont return password to client-side/ JSON reponse
     }catch(err){
         next(err);
     }
