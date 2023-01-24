@@ -42,5 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }, "proxy":"http://localhost:3000/api"
+  }, "proxy":"https://skab-book-king.onrender.com"
 }
